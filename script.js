@@ -23,8 +23,7 @@
     const button = document.getElementById("button");
     const getInputValues = document.getElementById("getInputValues");
 
-    button.addEventListener("click", function (e) {
-      e.preventDefault();
+    button.addEventListener("click", function () {
 
       const para = document.createElement("div");
       para.classList.add("input-para");
@@ -50,8 +49,8 @@
 
   getInputResults();
 
-  function deleteRaw(isa) {
-    const para = isa.parentElement.parentElement;
+  function deleteRaw(item) {
+    const para = item.parentElement.parentElement;
     para.remove();
   }
 
