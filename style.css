@@ -88,6 +88,7 @@
 .input {
     margin-top: 50px;
     gap: 10px;
+    display: flex;
 }
 .input input {
     width: 275px;

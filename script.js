@@ -12,8 +12,7 @@ function getTimeAndDay() {
 }
 
 
-setInterval(getTimeAndDay, 1000)
-
+// setInterval(getTimeAndDay, 1000)
 getTimeAndDay();
 
 
@@ -43,19 +42,18 @@ function getInputResults  ()  {    //badname//
         `
        
     })
-
-
 }
 getInputResults  ();
 
 
 
 function deleteRaw() {
-
+    const para = document.querySelector(".input-para")
     const redButton = document.querySelector(".rubbish-button")
     redButton.addEventListener("click" , () => {
-        const para = document.querySelector(".input-para")
-      para.remove();
+
+        para.remove();
+
     })
   
   }
