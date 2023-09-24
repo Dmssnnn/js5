@@ -4,7 +4,7 @@ function getTimeAndDay() {
 
     const hours = new Date().getHours()
     const minutes = new Date().getMinutes()
-    timeElement.textContent = `${hours}:${minutes}`;
+    timeElement.textContent = `${hours}:${minutes}`
 
     const days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
     const weekDays = days[new Date().getDay()];
