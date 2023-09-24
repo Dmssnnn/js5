@@ -1,17 +1,12 @@
-
-
-
-
-
-  function getTimeAndDay() {
+function getTimeAndDay() {
     const timeElement = document.getElementById('time');
     const dayElement = document.getElementById('day');
 
-    const hours = new Date().getHours().toString().padStart(2, '0');
-    const minutes = new Date().getMinutes().toString().padStart(2, '0');
+    const hours = new Date().getHours()
+    const minutes = new Date().getMinutes()
     timeElement.textContent = `${hours}:${minutes}`;
 
-    const days = ["Sun", "Mon", "Tue", "Wedn", "Thur", "Fri", "Satur"];
+    const days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
     const weekDays = days[new Date().getDay()];
     dayElement.textContent = `${weekDays}`;
   }
@@ -28,8 +23,8 @@
       const para = document.createElement("div");
       para.classList.add("input-para");
 
-      const hours = new Date().getHours().toString().padStart(2, '0');
-      const minutes = new Date().getMinutes().toString().padStart(2, '0');
+      const hours = new Date().getHours().toString()
+      const minutes = new Date().getMinutes().toString()
       const input = document.getElementById("input").value;
 
       para.innerHTML = `

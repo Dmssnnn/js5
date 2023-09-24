@@ -53,7 +53,7 @@
     background-color: #FFFFFF;
     border-radius: 10px;
     position: absolute;
-    overflow: auto;
+    overflow:auto;
 }
 
 .picture-div {
