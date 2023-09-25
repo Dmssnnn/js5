@@ -30,7 +30,7 @@ function getTimeAndDay() {
         <div class="divi">
           <div class="text-wrap">
             <span>${input}</span>
-            <h6>Today At ${hours}:${minutes}</h6>
+            <h6 class ="para-time">Today At ${hours}:${minutes}</h6>
           </div>
           <div><button class="rubbish-button"><img src="imgs/rubbish.svg" alt=""></button></div>
         </div>
